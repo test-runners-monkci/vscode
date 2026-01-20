@@ -13,7 +13,6 @@ on:
       remote_tests:
         type: boolean
         default: false
-
 jobs:
   linux-test:
     name: ${{ inputs.job_name }}
