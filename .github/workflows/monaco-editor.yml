@@ -1,6 +1,7 @@
 name: Monaco Editor checks
 
 on:
+  workflow_dispatch: 
   push:
     branches:
       - main
@@ -14,7 +15,7 @@ permissions: {}
 jobs:
   main:
     name: Monaco Editor checks
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     timeout-minutes: 40
     env:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
