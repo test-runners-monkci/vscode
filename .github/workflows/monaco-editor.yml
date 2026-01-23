@@ -15,7 +15,7 @@ permissions: {}
 jobs:
   main:
     name: Monaco Editor checks
-    runs-on: [self-hosted, 5000-iops]
+    runs-on: [self-hosted, 6500-iops]
     timeout-minutes: 40
     env:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
